@@ -34,6 +34,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+button {
+  cursor: pointer;
+  background-color: var(--gray-bgc);
+  color: var(--black-text-color);
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -54,6 +60,13 @@ img {
 .link:focus {
   color: var(--accent-color);
 }
+
+.list {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -62,11 +75,21 @@ img {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .header {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -91,13 +114,6 @@ img {
   fill: currentColor;
 }
 
-.list {
-  list-style: none;
-  padding-left: 0px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .current {
   color: var(--accent-color);
   position: relative;
@@ -113,11 +129,6 @@ img {
   left: 0;
   bottom: 0;
 }
-button {
-  cursor: pointer;
-  background-color: var(--gray-bgc);
-  color: var(--black-text-color);
-}
 
 .accent-button {
   padding: 10px 32px;
@@ -132,15 +143,6 @@ button {
   background-color: var(--accent-color);
   color: var(--white-text-color);
   border: none;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .header .logo {
